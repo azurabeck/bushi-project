@@ -1,0 +1,13 @@
+.navbar { display: flex; flex-direction: row; align-items: center; justify-content: flex-end; background-color: #F3F3F3; height: 60px; padding: 0 24px;
+    .logo { width: 100px; margin: 0 20px; }
+    .nav-group { width: 100%; text-align: right; 
+        svg { margin: 0 15px; }
+        svg:last-child { margin-right: 0; }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .navbar .logo { -webkit-order: 1; -ms-order: 1;  order: 1; margin: 0; }
+    .navbar .nav-group { -webkit-order: 2; -ms-order: 2;  order: 2; }
+    .navbar svg.svg-inline--fa.fa-bars.fa-w-14 { -webkit-order: 3; -ms-order: 3;  order: 3; margin-left: 30px; }
+}

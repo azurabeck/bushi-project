@@ -1,0 +1,63 @@
+.home { display: flex; flex-direction: column; margin: 0 auto; max-width: 100%; 
+
+    // HEADER
+    .header { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 610px; width: 100%; position: relative;
+        
+        .logo { margin-bottom: 60px;  width: 200px;  margin-right: -45px; }
+        .header-text { color: #fff; font-size: $huge; font-style: italic; font-weight: 300;text-align: center; letter-spacing: 0.125em; text-transform: uppercase; max-width: 663px; }
+        svg { font-size: 26px;  position: absolute; bottom: 20px; }
+    }
+
+    // CARROSSEL
+    .carrossel { display: flex; flex-direction: row; align-items: center; justify-content: center;  width: calc(100% - 20px); max-width: calc(100% - 20px); 
+        margin-top: 30px; padding: 0 10px;
+       
+        .car-text { width: 100%; max-width: 100%; font-size: $medium; text-align: center; text-transform: uppercase; color: #343434; }
+        svg { font-size: $large; }
+    }
+
+    // DIVIDER
+    .divider { display: block; margin: 50px auto; width: 100px; height: 10px; background-color: #C4C4C4; }
+
+    // CONTENT
+    .content { display: flex; flex-direction: column; align-items: flex-start; max-width: calc(100% - 20px); padding: 0 10px;
+        
+        .title { font-weight: bold; font-size: $medium; text-transform: uppercase;  color: #000000; margin-bottom: 50px;}  
+        .block { display: flex; flex-direction: column;
+            .block-one , .block-two , .block-tree { width: 100%; margin-bottom: 70px;
+            
+                .img-area { display: flex; align-items: center; justify-content: center; flex-basis: 55px; max-width: 55px; margin: 0 10px; 
+                svg { font-size: 50px; }}    
+                .block-text { width: 100%; max-width: 100%; }        
+            } 
+    
+            .block-one , .block-two { display: flex; flex-direction: row;  }
+            .block-tree { display: flex; flex-direction: column; align-items: center; justify-content: center;
+    
+                .img-area { margin-bottom: 20px; }
+                .block-text { text-align: center; }
+            }       
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    // HEADER
+    .home .header .header-text { font-size: $giant }
+    .home .header svg { font-size: 32px; }
+
+    // CARROSSEL
+    .home .carrossel .car-text { font-size: $large }
+    .home .carrossel svg { font-size: $huge; }
+
+    // CONTENT
+    .home .content .title { width: 100%; text-align: center; }
+    .home .content .block {flex-direction: row; width: 100%; justify-content: space-around;}
+    .home .content .block .block-one , .home .content .block .block-two , .home .content .block .block-tree {flex-direction: column; max-width: 300px; }
+    .home .content .block .block-one , .home .content .block .block-two { align-items: center; justify-content: center; }
+    .home .content .block .block-one , .home .content .block .block-two .block-text { text-align: center; }
+    .home .content .block-two .block-text { -webkit-order: 2; -ms-order: 2;  order: 2; }
+    .home .content .block-two .img-area { -webkit-order: 1; -ms-order: 1;  order: 1; }
+
+
+}
