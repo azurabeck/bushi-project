@@ -25,7 +25,8 @@ This project contains 3 steps
        * On button sidebar, change to a empty page (only with page name)
        * You can follow sample in figma flow, and repeate to other link inside menus  
 
-*ignore login button at this moment
+
+*ignore login button at this moment*
 
 
 # Part - 03
@@ -39,5 +40,5 @@ This project contains 3 steps
 5. On favorite click, the item must be added to a user list of favorites
 
 
-*ignore filters at this moment
+*ignore filters at this moment*
 
