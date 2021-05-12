@@ -1,13 +1,15 @@
 import React, { PureComponent } from 'react';
 import Logo from '../comp_ui/images/logo_white.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowAltDown , faCaretLeft , faCaretRight , faFire , faInfinity , faDragon } from '@fortawesome/free-solid-svg-icons'
+import { faLongArrowAltDown , faFire , faInfinity , faDragon } from '@fortawesome/free-solid-svg-icons'
+
+import Carrossel from '../comp_ui/global/carrossel'
 
 class home extends PureComponent {
 
     render() {
         
-        const carrosselStyle = {
+        const imageStyle = {
             background: 'linear-gradient(360deg , rgba(255, 0, 0, 0.69) 0%, rgba(41, 0, 0, 0.51) 100%) , url(https://revistafactual.com.br/wp-content/uploads/2016/01/samurai-x.jpg)',
             backgroundPositionX: '65%',
             backgroundSize: 'cover',
@@ -15,20 +17,14 @@ class home extends PureComponent {
 
 
         return (
-            <div className='home'>
-                <div className='header' style={carrosselStyle}>
+            <div className='content home'>
+                <div className='header' style={imageStyle}>
                     <img src={Logo} className='logo' alt=''></img>
                     <div className='header-text'>monitore os seus animes preferidos, e não perca mais nenhum episódio</div>
                     <FontAwesomeIcon icon={faLongArrowAltDown} color='#FED500' />
                 </div>
 
-                <div className='carrossel'>
-
-                    <FontAwesomeIcon icon={faCaretLeft} color='#C9C9C9' />
-                    <div className='car-text'> Hoje: my hero academia - ep132  </div>
-                    <FontAwesomeIcon icon={faCaretRight} color='#C9C9C9' />
-
-                </div>
+                <Carrossel />
 
                 <span className='divider'></span>
 

@@ -1,4 +1,4 @@
-.home { display: flex; flex-direction: column; margin: 0 auto; max-width: 100%; 
+.home { 
 
     // HEADER
     .header { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 610px; width: 100%; position: relative;
@@ -8,19 +8,11 @@
         svg { font-size: 26px;  position: absolute; bottom: 20px; }
     }
 
-    // CARROSSEL
-    .carrossel { display: flex; flex-direction: row; align-items: center; justify-content: center;  width: calc(100% - 20px); max-width: calc(100% - 20px); 
-        margin-top: 30px; padding: 0 10px;
-       
-        .car-text { width: 100%; max-width: 100%; font-size: $medium; text-align: center; text-transform: uppercase; color: #343434; }
-        svg { font-size: $large; }
-    }
-
     // DIVIDER
     .divider { display: block; margin: 50px auto; width: 100px; height: 10px; background-color: #C4C4C4; }
 
     // CONTENT
-    .content { display: flex; flex-direction: column; align-items: flex-start; max-width: calc(100% - 20px); padding: 0 10px;
+    .content { display: flex; flex-direction: column; align-items: flex-start; width: calc(100% - 20px); max-width: calc(100% - 20px); padding: 0 10px;
         
         .title { font-weight: bold; font-size: $medium; text-transform: uppercase;  color: #000000; margin-bottom: 50px;}  
         .block { display: flex; flex-direction: column;

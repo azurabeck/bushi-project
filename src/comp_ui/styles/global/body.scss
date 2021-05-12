@@ -4,14 +4,9 @@ $robot: 'Roboto', sans-serif;
 $giant: 36px; $huge:  24px; $large: 20px; $medium: 16px; $small: 12px;
 
 html { background-color: #fff; } 
-body , #root {
-    min-height: 100vh;
-    max-width: 100%;
-    background-color: #fff;
-    margin: 0 auto;
-    font-family: $robot;
-    letter-spacing: 0.125em; 
-}
+body , #root { max-width: 100%; background-color: #fff; margin: 0 auto; font-family: $robot; letter-spacing: 0.125em; position:absolute; top:0; bottom:0; right:0; left:0; }
+.app { height: calc(100% - 60px); }
+.content { display: flex; flex-direction: column; margin: 0 auto; max-width: 100%; margin-top: 60px; min-height: calc(100% - 60px); }
 
 
 

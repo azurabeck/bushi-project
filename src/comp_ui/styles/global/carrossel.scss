@@ -1,0 +1,7 @@
+.carrossel { display: flex; flex-direction: row; align-items: center; justify-content: center;  width: calc(100% - 20px); max-width: calc(100% - 20px); 
+    margin-top: 30px; padding: 0 10px;
+   
+    .car-text { width: 100%; max-width: 100%; font-size: $medium; text-align: center; text-transform: uppercase; color: #343434; }
+    svg { font-size: $large; cursor: pointer; }
+    svg:hover { color: #343434; }
+}

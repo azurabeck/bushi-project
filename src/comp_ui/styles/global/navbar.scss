@@ -1,8 +1,37 @@
-.navbar { display: flex; flex-direction: row; align-items: center; justify-content: flex-end; background-color: #F3F3F3; height: 60px; padding: 0 24px;
+.navbar { display: flex; flex-direction: row; align-items: center; justify-content: flex-end; background-color: #F3F3F3; height: 60px; padding: 0 24px; 
+    position: fixed; top: 0; left: 0; right: 0; z-index: 2;
     .logo { width: 100px; margin: 0 20px; }
-    .nav-group { width: 100%; text-align: right; 
-        svg { margin: 0 15px; }
+    svg { cursor: pointer; }
+    .nav-group { width: 100%; display: flex; flex-direction: row; justify-content: flex-end; align-items: center;
+        svg { margin: 0 15px; cursor: pointer; }
         svg:last-child { margin-right: 0; }
+
+        .nav-search { display: flex; flex-direction: row; align-items: center; justify-content: flex-end; cursor: pointer;
+            input {  width: 100%; text-align: left; background: transparent; border: none; height: 100%; font-size: 10px; }
+            input:focus {  outline: none; }
+            input::placeholder { text-transform: uppercase; }
+
+        }
+    }
+
+    .menu { position: fixed; top: 60px; bottom: 0; right: 0; left: 0; background-color: rgba(41, 0, 0, 0.51); z-index: 2; display: flex;
+        justify-content: flex-end;
+        .menu-area  { background-color: #fff; width:450px; height: 100%; padding: 60px;           
+            ul  { list-style: none; padding: 0; 
+                a { text-decoration: none;
+                    li { width: 100%; display: flex; flex-direction: row; align-items: center; margin-bottom: 50px; height: 30px;
+                        span { width: 100%; font-weight: 500; font-size: $medium; letter-spacing: 0.125em; color: #969696; }
+                        svg { width: 30px; font-size: $large; color: #969696; }
+                    }
+                    li:hover { cursor: pointer; span {color: #000;} svg { color: #ff253a; }  }
+                }
+            }            
+            .btn-google { border: 1px solid #3C7EFF; box-sizing: border-box; border-radius: 10px; margin: 0 auto; margin-top: 150px; width: 100%; height: 45px; max-width: 100%;
+                display: flex; flex-direction: row; align-items: center; justify-content: center; font-size: $small; color: #969696; text-transform: uppercase; 
+                img { width: 20px; margin-right: 15px; }
+            }
+            .btn-google:hover { cursor: pointer; color: #000; border: 1px solid #ff253a; img { cursor: pointer; } }
+        }
     }
 }
 
