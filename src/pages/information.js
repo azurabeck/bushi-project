@@ -27,15 +27,17 @@ class information extends PureComponent {
                        { 
                             anime && anime.map((anime, index) => {
 
-                                    console.log(anime)
+                                    let str = anime.title
+                                    const episode = str.split("Episode").pop();                                    
+                                    const name = str.split('Episode')[0]
 
                                     return (
                                         <div className='table-row' key={index}>
                                             <div className='img-area'><img src={anime.cover} alt=''/></div>
-                                            <div className='title'>Nome: {anime.title}</div>
+                                            <div className='title'>Nome: {name}</div>
                                             <div className='desc'>
                                                 <div className='desc-group'>
-                                                        <div className='desc'>Episódios: 12 </div>
+                                                        <div className='desc'>Episódio: {episode} </div>
                                                         <div className='desc'>Estrelas: ** </div>
                                                 </div>
                                                 <div className='btn'>favoritar</div>
