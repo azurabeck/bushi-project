@@ -3,18 +3,19 @@ import Logo from '../comp_ui/images/logo_white.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltDown , faFire , faInfinity , faDragon } from '@fortawesome/free-solid-svg-icons'
 
+
 import Carrossel from '../comp_ui/global/carrossel'
 
 class home extends PureComponent {
 
+   
     render() {
-        
+
         const imageStyle = {
             background: 'linear-gradient(360deg , rgba(255, 0, 0, 0.69) 0%, rgba(41, 0, 0, 0.51) 100%) , url(https://revistafactual.com.br/wp-content/uploads/2016/01/samurai-x.jpg)',
             backgroundPositionX: '65%',
             backgroundSize: 'cover',
         }
-
 
         return (
             <div className='content home'>
@@ -35,7 +36,7 @@ class home extends PureComponent {
 
                         <div className='block-one'>
                             <div className='img-area'> <FontAwesomeIcon icon={faFire} color='#C64750' /> </div>
-                            <div className='block-text'> <strong>Os Melhores</strong>  <br/> Veja o que esta pegando fogo, no mundo dos animes. Os animes mais  bem avaliados pela galera! </div>
+                            <div className='block-text'> <strong>Os Melhores</strong>  <br/> Veja o que esta pegando fogo, no mundo dos animes. Os animes mais bem avaliados pela galera! </div>
                         </div>
 
                         <div className='block-two'>
@@ -56,4 +57,5 @@ class home extends PureComponent {
     }
 }
 
-export default home;
+
+export default (home)
