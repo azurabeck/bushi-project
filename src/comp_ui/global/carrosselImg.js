@@ -45,8 +45,6 @@ class carrosselImg extends PureComponent {
 
         const { fn , sn , list} = this.state
 
-        console.log( fn , sn )
-
         return (
             <div className='carrossel-img'>
                 <div className='tag'>Nota {list[fn].note}: {list[fn].anime}</div>
