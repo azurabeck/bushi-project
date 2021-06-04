@@ -14,7 +14,7 @@ import Top10 from './pages/top10'
 function App() {
   return (
     <div className='app'>
-        <Navbar />
+        <Navbar />       
         <Switch>
 
             <Route exact path='/' component={Home}></Route>
@@ -23,7 +23,7 @@ function App() {
             <Route exact path='/configuracoes' component={Settings}></Route>
             <Route exact path='/top10' component={Top10}></Route>
 
-        </Switch>
+        </Switch>        
         <Footer />
     </div>
   );
